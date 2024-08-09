@@ -46,9 +46,15 @@
 
 
 
-#For loop
-fruits=["Apple","mango","gauva","orange"]
-for fruit in fruits:
-    print(fruit)
-    for i in fruit:
-        print(i)
+# #For loop
+# fruits=["Apple","mango","gauva","orange"]
+# for fruit in fruits:
+#     print(fruit)
+#     for i in fruit:
+#         print(i)
+
+
+
+#for loop with range
+for x in range(1,10):
+    print(x)
