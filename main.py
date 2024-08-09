@@ -32,15 +32,21 @@
 
 
 #match case statement
-num=int(input("Enter a number"))
+# num=int(input("Enter a number"))
 
-match num:
-    case num if num>0:
-        print("positive number")
+# match num:
+#     case num if num>0:
+#         print("positive number")
 
-    case num if num<0:
-        print("Negative number")
-    case _:
-        print("Zero")
-   
-   
+#     case num if num<0:
+#         print("Negative number")
+#     case _:
+#         print("Zero")
+
+
+
+
+#For loop
+fruits=["Apple","mango","gauva","orange"]
+for fruit in fruits:
+    print(fruit)
