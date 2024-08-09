@@ -70,12 +70,32 @@
 
 
 #for loop with continue statement
-fruits=["Apple","mango","gauva","orange"]
-for x in fruits:
-    if(x=="mango"):
-        continue
-    print(x)
+# fruits=["Apple","mango","gauva","orange"]
+# for x in fruits:
+#     if(x=="mango"):
+#         continue
+#     print(x)
     
+# for x in range(2,15):
+#  print(x)        
+# else:                          #for loop ma else statement loop sakkesi matra execute hunxa
+#  print("finally completed")
 
 
+
+# for x in range(2,15):
+#  print(x)
+#  if(x==10):
+#   break  #break use gareko condition break vayo vani else statement execute hudaina
+# else:
+#  print("finally completed")
+
+
+#nested for loop
+fruits=["mango","gauva","litchi","grapes"]
+car=["ferrera","nemerra","lambo"]
+
+for x in fruits:
+    for y in car:
+        print(x,y)
     
