@@ -56,5 +56,26 @@
 
 
 #for loop with range
-for x in range(1,10):
+# for x in range(1,100,5):
+#     print(x)
+
+
+
+#for loop with break statement
+# fruits=["Apple","mango","gauva","orange"]
+# for fruit in fruits:
+#     print(fruit)
+#     if (fruit=="gauva"):
+#      break
+
+
+#for loop with continue statement
+fruits=["Apple","mango","gauva","orange"]
+for x in fruits:
+    if(x=="mango"):
+        continue
     print(x)
+    
+
+
+    
