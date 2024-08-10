@@ -179,25 +179,31 @@
 
 
 #passing Arbitrary arguments
-def NumOne(*company):
-    print("Number one company is "+company[2])
+# def NumOne(*company):
+#     print("Number one company is "+company[2])
 
-NumOne("Infosis","Nemera","Brighttech","Vpanda")
-
-
-def avg(*num):
-    sum=0
-    for i in num:
-        sum=sum+i
-    print("Average =", sum/len(num))
-
-avg(2,4,6,12)
+# NumOne("Infosis","Nemera","Brighttech","Vpanda")
 
 
-#passing keyword argument
-def fullname(fname,mname,lname):
-    print(fname+" "+mname+" "+lname)
+# def avg(*num):
+#     sum=0
+#     for i in num:
+#         sum=sum+i
+#     print("Average =", sum/len(num))
 
-fullname(mname="Raj",lname="Bartaula",fname="Ishan")
+# avg(2,4,6,12)
+
+
+# #passing keyword argument
+# def fullname(fname,mname,lname):
+#     print(fname+" "+mname+" "+lname)
+
+# fullname(mname="Raj",lname="Bartaula",fname="Ishan")
 #we can pass arguments as key=value pair so the position of the arguments doesnt matter that much
 
+
+#passing arbitrary keyword argument
+def fullname(**name):
+    print("His last name is "+name["lname"])
+
+fullname(fname="Ishan",lname="Bartaula",mname="Raj")
