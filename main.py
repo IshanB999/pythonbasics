@@ -216,3 +216,23 @@ def myCountry(country="Nepal"):
 myCountry("Switzerland")
 myCountry()
 myCountry("Japan")
+
+
+def avg(a=10,b=20):
+    x=(a+b)/2
+    print("The average of ",a,"and",b,"is",x)
+
+avg()
+avg(2,4)
+avg(5)    
+avg(a=3)
+avg(b=11) 
+
+
+#passing list as an argument 
+def fruit(fruits):
+    for i in fruits:
+        print(i)
+
+name=["apple","gauva","grapes"]
+fruit(name)
