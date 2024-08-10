@@ -158,9 +158,16 @@
 #Function in python
 
 #hello function
-def hello():
-    print("Hello, Welcome to python function")
+# def hello():
+#     print("Hello, Welcome to python function")
 
-hello()
+# hello()
     
+
+#passing arguments in function
+def avg(a,b):
+    average=(a+b)/2
+    return average
+firstavg=avg(10,12)
+print(firstavg)
 
