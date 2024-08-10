@@ -1,6 +1,3 @@
-#For loop
-# fruits=["Apple","mango","gauva","orange"]
-# for fruit in fruits:
-#     print(fruit)
-#     for i in fruit:
-#         print(i)
+if(i==10):
+    #     print("Skip the 10th multiplication")
+    #     continue

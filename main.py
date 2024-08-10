@@ -117,12 +117,31 @@
 
 
 #with continue statement
-i=0
-while i<7:
+# i=0
+# while i<7:
     
-    i+=1
-    if i==4:
+#     i+=1
+#     if i==4:
+#         continue
+#     print(i)
+# else:
+#     print("The loop has ended ")
+
+
+#multiplication table using for loop and break statement
+# x=int(input("Enter the number for the multiplication: "))
+# for i in range(1,18):
+#     print(x,"*",i,"=",x*i)
+#     if(i==10):
+#         break
+
+
+#multiplication table using for loop and continue statement
+x=int(input("Enter the number for the multiplication: "))
+for i in range(1,11):
+     if(i==8):
         continue
-    print(i)
-else:
-    print("The loop has ended ")
+     print(x,"*",i,"=",x*i)
+    
+    
+
