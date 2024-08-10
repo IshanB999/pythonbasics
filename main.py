@@ -165,9 +165,39 @@
     
 
 #passing arguments in function
-def avg(a,b):
-    average=(a+b)/2
-    return average
-firstavg=avg(10,12)
-print(firstavg)
+# def avg(a,b):
+#     average=(a+b)/2
+#     return average
+# firstavg=avg(10,12)
+# print(firstavg)
+
+# def func(fname):
+#     print(fname+" "+"Infosis")
+
+# func("Ishan")
+# func("Corporate")
+
+
+#passing Arbitrary arguments
+def NumOne(*company):
+    print("Number one company is "+company[2])
+
+NumOne("Infosis","Nemera","Brighttech","Vpanda")
+
+
+def avg(*num):
+    sum=0
+    for i in num:
+        sum=sum+i
+    print("Average =", sum/len(num))
+
+avg(2,4,6,12)
+
+
+#passing keyword argument
+def fullname(fname,mname,lname):
+    print(fname+" "+mname+" "+lname)
+
+fullname(mname="Raj",lname="Bartaula",fname="Ishan")
+#we can pass arguments as key=value pair so the position of the arguments doesnt matter that much
 
