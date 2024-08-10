@@ -144,15 +144,23 @@
 #      print(x,"*",i,"=",x*i)
 
 #multiplication table using while loop with continue statement
-x=int(input("enter a number for its multiplication: "))
-i=0
-while i<10:
-    i+=1
-    if i==5:
-        continue
+# x=int(input("enter a number for its multiplication: "))
+# i=0
+# while i<10:
+#     i+=1
+#     if i==5:
+#         continue
    
-    print(x,"*",i,"=",x*i)
+#     print(x,"*",i,"=",x*i)
    
-    
+
+
+#Function in python
+
+#hello function
+def hello():
+    print("Hello, Welcome to python function")
+
+hello()
     
 
