@@ -92,10 +92,37 @@
 
 
 #nested for loop
-fruits=["mango","gauva","litchi","grapes"]
-car=["ferrera","nemerra","lambo"]
+# fruits=["mango","gauva","litchi","grapes"]
+# car=["ferrera","nemerra","lambo"]
 
-for x in fruits:
-    for y in car:
-        print(x,y)
+# for x in fruits:
+#     for y in car:
+#         print(x,y)
     
+
+
+#while loop 
+# i=0
+# while i<10:
+#     print(i)
+#     i+=1
+
+# "second while loop with break statement"
+# i=0
+# while i<10:
+#     print(i)
+#     if i==5:
+#         break
+#     i+=1
+
+
+#with continue statement
+i=0
+while i<7:
+    
+    i+=1
+    if i==4:
+        continue
+    print(i)
+else:
+    print("The loop has ended ")
