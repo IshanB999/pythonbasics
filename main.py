@@ -207,3 +207,12 @@ def fullname(**name):
     print("His last name is "+name["lname"])
 
 fullname(fname="Ishan",lname="Bartaula",mname="Raj")
+
+
+#default parameter value
+def myCountry(country="Nepal"):
+    print("My present country is "+country)
+
+myCountry("Switzerland")
+myCountry()
+myCountry("Japan")
