@@ -359,20 +359,20 @@
 
 
 #update tuple
-name=("Ishan","rakshya","pabitra","aayan","saaya")
-name1=list(name)
-# name1.remove("Ishan")
-# print(name1)
+# name=("Ishan","rakshya","pabitra","aayan","saaya")
+# name1=list(name)
+# # name1.remove("Ishan")
+# # print(name1)
 
-# name1.append("Pratikshya")
-# print(name1)
+# # name1.append("Pratikshya")
+# # print(name1)
 
-# name1.insert(2,"Smriti")
-# print(name1)
+# # name1.insert(2,"Smriti")
+# # print(name1)
 
-name2=("Ankita","dikshya","Astika")
-name=name+name2
-print (name)
+# name2=("Ankita","dikshya","Astika")
+# name=name+name2
+# print (name)
 
     
 
