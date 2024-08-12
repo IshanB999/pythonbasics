@@ -202,37 +202,54 @@
 #we can pass arguments as key=value pair so the position of the arguments doesnt matter that much
 
 
-#passing arbitrary keyword argument
-def fullname(**name):
-    print("His last name is "+name["lname"])
+# #passing arbitrary keyword argument
+# def fullname(**name):
+#     print("His last name is "+name["lname"])
 
-fullname(fname="Ishan",lname="Bartaula",mname="Raj")
-
-
-#default parameter value
-def myCountry(country="Nepal"):
-    print("My present country is "+country)
-
-myCountry("Switzerland")
-myCountry()
-myCountry("Japan")
+# fullname(fname="Ishan",lname="Bartaula",mname="Raj")
 
 
-def avg(a=10,b=20):
-    x=(a+b)/2
-    print("The average of ",a,"and",b,"is",x)
+# #default parameter value
+# def myCountry(country="Nepal"):
+#     print("My present country is "+country)
 
-avg()
-avg(2,4)
-avg(5)    
-avg(a=3)
-avg(b=11) 
+# myCountry("Switzerland")
+# myCountry()
+# myCountry("Japan")
 
 
-#passing list as an argument 
-def fruit(fruits):
-    for i in fruits:
-        print(i)
+# def avg(a=10,b=20):
+#     x=(a+b)/2
+#     print("The average of ",a,"and",b,"is",x)
 
-name=["apple","gauva","grapes"]
-fruit(name)
+# avg()
+# avg(2,4)
+# avg(5)    
+# avg(a=3)
+# avg(b=11) 
+
+
+# #passing list as an argument 
+# def fruit(fruits):
+#     for i in fruits:
+#         print(i)
+
+# name=["apple","gauva","grapes"]
+# fruit(name)
+
+
+
+
+
+
+#list in python
+car=["nemeraa","lambo","honda"]
+marks=[90,48,62,71]
+print(car)
+print(marks)
+print(len(car))
+print(len(marks))
+print(type(marks))
+
+fruits=list(("apple","mango","litchi","peach"))  #creating list using list constructor
+print(fruits)
