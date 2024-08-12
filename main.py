@@ -313,20 +313,48 @@
 
 
 #remove list items
-fruits=["apple","peach","grapes","litchi","mango"]
-print(fruits)
-
-# fruits.remove('grapes')
-# print (fruits)
-
-# fruits.pop(fruits.index("peach"))
-# print (fruits)
-
-# fruits.clear()
+# fruits=["apple","peach","grapes","litchi","mango"]
 # print(fruits)
 
+# # fruits.remove('grapes')
+# # print (fruits)
 
-del fruits[3]
-print (fruits)
+# # fruits.pop(fruits.index("peach"))
+# # print (fruits)
+
+# # fruits.clear()
+# # print(fruits)
+
+
+# del fruits[3]
+# print (fruits)
+
+
+
+
+#tuples in python
+name=("Ishan","rakshya","pabitra","aayan","saaya")
+print(name)
+print(type(name))
+print(len(name))
+print(name[2])
+
+marks=tuple((98,44,53,67,87,33))
+print(marks)
+print(type(marks))
+print(marks[2:4])
+print(name[:3])
+print(marks[2:])
+
+
+if "pabitra" in name:
+    print("yes pabitra exist in this tuple")
+else:
+    print("No")
+
+if 45 in marks:
+    print("Yes 45 is present in this tuple")
+else:
+    print("No it doesnt exist")
     
 
