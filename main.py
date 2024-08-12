@@ -257,21 +257,40 @@
 
 
 #accessing the lists
-name=["Ishan","pabitra","rakshya","Aayan"]
-marks=[98,72,88,54,89]
-print(name[3])
-print(marks[3])
-print(name[1:3])
-print(marks[:3])
-print(marks[1:])
-if "rakshya" in name:
-    print ("yes")
-else:
-    print("No")
+# name=["Ishan","pabitra","rakshya","Aayan"]
+# marks=[98,72,88,54,89]
+# print(name[3])
+# print(marks[3])
+# print(name[1:3])
+# print(marks[:3])
+# print(marks[1:])
+# if "rakshya" in name:
+#     print ("yes")
+# else:
+#     print("No")
 
-if 70 in marks:
-    print("yes ,70 is in list marks")
-else:
-    print("No")
+# if 70 in marks:
+#     print("yes ,70 is in list marks")
+# else:
+#     print("No")
 
+
+#change list items
+fruits=["apple","peach","grapes","litchi","mango"]
+print(fruits)
+# fruits[2]="dragonfruit"
+# print(fruits)
+
+# # fruits[1:4]=["gauva","blackberry","srifa"]   #changing the range of list items
+# # print(fruits)
+
+# # fruits[1:2]=["gauva","blackberry","srifa"]   #if range of index is less an listed items is more ,it will change the range of items and other items will fall accordingly 
+# # print(fruits)                                   
+
+# fruits[1:4]=["gauva"]     #yedi range of index dherai xa ra change garna lako item thorai xa vaney , tyo range of index ma parni sabbai item lai hatayera naya item halxa ra bacheko item accordingly basxa
+# print(fruits)
+
+
+# fruits.insert(2,"papaya")
+# print(fruits)
 
