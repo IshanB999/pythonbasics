@@ -243,13 +243,35 @@
 
 
 #list in python
-car=["nemeraa","lambo","honda"]
-marks=[90,48,62,71]
-print(car)
-print(marks)
-print(len(car))
-print(len(marks))
-print(type(marks))
+# car=["nemeraa","lambo","honda"]
+# marks=[90,48,62,71]
+# print(car)
+# print(marks)
+# print(len(car))
+# print(len(marks))
+# print(type(marks))
 
-fruits=list(("apple","mango","litchi","peach"))  #creating list using list constructor
-print(fruits)
+# fruits=list(("apple","mango","litchi","peach"))  #creating list using list constructor
+# print(fruits)
+
+
+
+#accessing the lists
+name=["Ishan","pabitra","rakshya","Aayan"]
+marks=[98,72,88,54,89]
+print(name[3])
+print(marks[3])
+print(name[1:3])
+print(marks[:3])
+print(marks[1:])
+if "rakshya" in name:
+    print ("yes")
+else:
+    print("No")
+
+if 70 in marks:
+    print("yes ,70 is in list marks")
+else:
+    print("No")
+
+
