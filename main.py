@@ -276,8 +276,8 @@
 
 
 #change list items
-fruits=["apple","peach","grapes","litchi","mango"]
-print(fruits)
+# fruits=["apple","peach","grapes","litchi","mango"]
+# print(fruits)
 # fruits[2]="dragonfruit"
 # print(fruits)
 
@@ -293,4 +293,18 @@ print(fruits)
 
 # fruits.insert(2,"papaya")
 # print(fruits)
+
+
+
+
+#Add list items
+fruits=["apple","peach","grapes","litchi","mango"]
+print(fruits)
+fruits.append("papaya")
+print(fruits)
+
+berry=["balckberry","blueberry","walnuts"]
+fruits.extend(berry)
+
+print (fruits)
 
