@@ -374,5 +374,17 @@
 # name=name+name2
 # print (name)
 
+
+
+
+#f-strings in python
+name="Ishan bartaula"
+age=22
+clgname="CCT"
+university="Tribhuwan"
+letter=f"Hello everyone ,I am {name} .I am  {age} years old . I am currently studying  in {clgname} affilitated with {university}."
+
+print(letter.format(name,university,clgname,age))
+
     
 
