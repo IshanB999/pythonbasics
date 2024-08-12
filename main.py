@@ -333,28 +333,46 @@
 
 
 #tuples in python
+# name=("Ishan","rakshya","pabitra","aayan","saaya")
+# print(name)
+# print(type(name))
+# print(len(name))
+# print(name[2])
+
+# marks=tuple((98,44,53,67,87,33))
+# print(marks)
+# print(type(marks))
+# print(marks[2:4])
+# print(name[:3])
+# print(marks[2:])
+
+
+# if "pabitra" in name:
+#     print("yes pabitra exist in this tuple")
+# else:
+#     print("No")
+
+# if 45 in marks:
+#     print("Yes 45 is present in this tuple")
+# else:
+#     print("No it doesnt exist")
+
+
+#update tuple
 name=("Ishan","rakshya","pabitra","aayan","saaya")
-print(name)
-print(type(name))
-print(len(name))
-print(name[2])
+name1=list(name)
+# name1.remove("Ishan")
+# print(name1)
 
-marks=tuple((98,44,53,67,87,33))
-print(marks)
-print(type(marks))
-print(marks[2:4])
-print(name[:3])
-print(marks[2:])
+# name1.append("Pratikshya")
+# print(name1)
 
+# name1.insert(2,"Smriti")
+# print(name1)
 
-if "pabitra" in name:
-    print("yes pabitra exist in this tuple")
-else:
-    print("No")
+name2=("Ankita","dikshya","Astika")
+name=name+name2
+print (name)
 
-if 45 in marks:
-    print("Yes 45 is present in this tuple")
-else:
-    print("No it doesnt exist")
     
 

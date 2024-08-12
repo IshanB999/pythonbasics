@@ -1,2 +1,3 @@
-fruits.pop(fruits.index("peach"))
-print (fruits)
+name2=("Ankita","dikshya","Astika")
+name=name+name2
+print (name)
