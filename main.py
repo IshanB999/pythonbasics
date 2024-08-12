@@ -298,13 +298,35 @@
 
 
 #Add list items
+# fruits=["apple","peach","grapes","litchi","mango"]
+# print(fruits)
+# fruits.append("papaya")
+# print(fruits)
+
+# berry=["balckberry","blueberry","walnuts"]
+# fruits.extend(berry)
+
+# print (fruits)
+
+# print(fruits.index("peach"))
+
+
+
+#remove list items
 fruits=["apple","peach","grapes","litchi","mango"]
 print(fruits)
-fruits.append("papaya")
-print(fruits)
 
-berry=["balckberry","blueberry","walnuts"]
-fruits.extend(berry)
+# fruits.remove('grapes')
+# print (fruits)
 
+# fruits.pop(fruits.index("peach"))
+# print (fruits)
+
+# fruits.clear()
+# print(fruits)
+
+
+del fruits[3]
 print (fruits)
+    
 
