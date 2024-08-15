@@ -551,8 +551,12 @@
 # print (set)
 
 
-
-
+#check if exist in set
+set={1,3,5,7,9}
+if 3 in set:
+    print("3 is present in set")
+else:
+    print("No its not present in set")
 
 
 
