@@ -400,22 +400,41 @@
 
 
 #fiboncci sequence using recursion
-def fibonacci(n):
+# def fibonacci(n):
     
-    if n<=1:
-       return n
+#     if n<=1:
+#        return n
         
-    else:
-     return(fibonacci(n-1)+fibonacci(n-2))
+#     else:
+#      return(fibonacci(n-1)+fibonacci(n-2))
 
     
-num_terms=int(input("Enter the number of fibonacci you need :"))
-print(num_terms," fibonacci sequence are ")
-for i in range(num_terms):
-   print(fibonacci(i))
-   
+# num_terms=int(input("Enter the number of fibonacci you need :"))
+# print(num_terms," fibonacci sequence are ")
+# for i in range(num_terms):
+#    print(fibonacci(i))
 
 
 
 
+#Set in python
 
+# num={1,2,"ishan",5,4,7,"bartaula",6,4,2}
+# print(num)
+
+# info=set()
+# print(type(info))
+
+# for i in num:
+#     print(i)
+
+
+set1={2,4,6,8,10}
+set2={5,6,7,8,9,11}
+set3=set1.union(set2)
+print(set3)
+
+print(set1,set2)
+
+set1.update(set2)
+print(set1)
