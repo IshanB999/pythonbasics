@@ -467,5 +467,17 @@
 # print(name1)
 
 
+#difference  and difference_update in set
+# name1={"Nepal","Bhutan","India","Japan","Africa"}
+# name2={"America","China","Japan","Korea","India"}
+# name3=name1.difference(name2)
+# print(name3)
+
+# print(name1,name2)
+
+# name1.difference_update(name2)
+# print(name1)
+
+
 
 
