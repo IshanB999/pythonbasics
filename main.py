@@ -513,22 +513,45 @@
 
 
 #add() in set
-set={1,3,5,7,9}
-set.add(10)
-print(set)
+# set={1,3,5,7,9}
+# set.add(10)
+# print(set)
 
-set.add("ishan")
-print(set)
+# set.add("ishan")
+# print(set)
 
 
-set.remove(5)
-print(set)
+# set.remove(5)
+# print(set)
 
-set.discard("ishan")  #discard use garera ste ma navako item romove garda pani error thrpw chai gardaina
-print(set)
+# set.discard("ishan")  #discard use garera ste ma navako item romove garda pani error thrpw chai gardaina
+# print(set)
 
-set.remove("ishan")
-print(set)        # remove use garera set ma navako ietem hatauda chai error throw garxa
+# set.remove("ishan")
+# print(set)        # remove use garera set ma navako ietem hatauda chai error throw garxa
+
+
+
+
+#pop in set 
+# set={1,3,5,7,9}
+# set.add(10)
+# print(set.pop())
+# print(set)
+
+
+# #del in set
+# set={1,3,5,7,9}
+# del set
+# print(set)
+
+#clear in set
+# set={1,3,5,7,9}
+# set.clear()
+# print (set)
+
+
+
 
 
 
