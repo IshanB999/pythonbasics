@@ -444,13 +444,28 @@
 
 
 #intersection and intersection_update in set
-set1={2,4,6,8,10}
-set2={5,6,7,8,9,11}
-set3=set1.intersection(set2)
-print(set3)
-print(set1,set2)
+# set1={2,4,6,8,10}
+# set2={5,6,7,8,9,11}
+# set3=set1.intersection(set2)
+# print(set3)
+# print(set1,set2)
 
 
-set1.intersection_update(set2)
-print(set1)
+# set1.intersection_update(set2)
+# print(set1)
+
+
+#symmetric difference  and symmetric difference update in set
+# name1={"Nepal","Bhutan","India","Japan","Africa"}
+# name2={"America","China","Japan","Korea","India"}
+# name3=name1.symmetric_difference(name2)
+# print(name3)
+
+# print(name1,name2)
+
+# name1.symmetric_difference_update(name2)
+# print(name1)
+
+
+
 
