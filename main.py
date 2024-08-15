@@ -502,14 +502,33 @@
 
 
 #issubset in set
-set1={1,2,3,4,5,6,7,8,9,10,11,12}
-set2={1,3,5,7,9}
-print(set2.issubset(set1))
+# set1={1,2,3,4,5,6,7,8,9,10,11,12}
+# set2={1,3,5,7,9}
+# print(set2.issubset(set1))
 
 
-set1={2,4,6,8,10}
-set2={5,6,7,8,9,11}
-print(set1.issubset(set2))
+# set1={2,4,6,8,10}
+# set2={5,6,7,8,9,11}
+# print(set1.issubset(set2))
+
+
+#add() in set
+set={1,3,5,7,9}
+set.add(10)
+print(set)
+
+set.add("ishan")
+print(set)
+
+
+set.remove(5)
+print(set)
+
+set.discard("ishan")  #discard use garera ste ma navako item romove garda pani error thrpw chai gardaina
+print(set)
+
+set.remove("ishan")
+print(set)        # remove use garera set ma navako ietem hatauda chai error throw garxa
 
 
 
