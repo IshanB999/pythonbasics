@@ -631,14 +631,48 @@
 
 #Exception handling in python
 
-a=input("Enter a number :")
+# a=input("Enter a number :")
 
-try :
-    for i in range(0,11):
-     print(f"{int(a)}x{i}={int(a)*i}")
+# try :
+#     for i in range(0,11):
+#      print(f"{int(a)}x{i}={int(a)*i}")
 
-except:
-   print("Invalid syntax")
+# except:
+#    print("Invalid syntax")
+
+
+
+# try:
+#     print("hello")
+# except:
+#     print("Something went wrong")
+# else:
+#     print("Nothing went wrong")    #it wont get executed if try throw an error
+# finally:
+#     print("Try except end")         #it will get executed whether try throw an error or not 
+
+
+# i=11
+# if (i<0 or i>10):
+#     raise Exception("Number less then 0 and greater than 10 not allowed")
+
+
+
+def func():
+    try:
+        l=[1,3,5,7,9,11]
+        i=int(input("Enter the index of value required :"))
+        print(l[i])
+        return l[i]
+    except:
+        print("Some error occured")
+        return 1
+    finally:
+        return 0
+x=func()
+print(x)
+
+
 
  
 
