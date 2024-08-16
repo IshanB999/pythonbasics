@@ -77,7 +77,7 @@ if cont=="y":
           else:
               print("Thats incorrect answer. You are eliminated")
               sys.exit()
-              
+
           
 
       val=incre()            #calling the fucntion , so every time incre function is called; answer is checked
