@@ -561,6 +561,28 @@
 
 
 #Dictionary in python
+cars={"name":"Ford Mustang",
+      "model":"hellcat",
+      "year":1960,
+      "color":"Matt black",
+      "type":"disel",
+      "Electric":False
+    }
+print(cars)
+print(cars["year"])
+print(cars["model"])
+print(cars["color"])
+print(cars["name"])
+print(cars["Electric"])
+
+print(len(cars))
+
+#Using dict() constructor to create dictionary
+student=dict(name="Ishan", age=22, course="CSIT",)
+print(student)
+
+
+
 
 
 
