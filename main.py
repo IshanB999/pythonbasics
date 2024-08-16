@@ -561,25 +561,76 @@
 
 
 #Dictionary in python
-cars={"name":"Ford Mustang",
-      "model":"hellcat",
-      "year":1960,
-      "color":"Matt black",
-      "type":"disel",
-      "Electric":False
-    }
-print(cars)
-print(cars["year"])
-print(cars["model"])
-print(cars["color"])
-print(cars["name"])
-print(cars["Electric"])
+# cars={"name":"Ford Mustang",
+#       "model":"hellcat",
+#       "year":1960,
+#       "color":"Matt black",
+#       "type":"disel",
+#       "Electric":False
+#     }
+# print(cars)
+# print(cars["year"])
+# print(cars["model"])
+# print(cars["color"])
+# print(cars["name"])
+# print(cars["Electric"])
+#  print(len(cars))
 
-print(len(cars))
 
-#Using dict() constructor to create dictionary
-student=dict(name="Ishan", age=22, course="CSIT",)
-print(student)
+
+
+# #Using dict() constructor to create dictionary
+
+# student=dict(name="Ishan", age=22, course="CSIT",)
+# print(student)
+
+
+
+#Access items in dictionary
+
+# employee={"name":"Ishan","batchno":2,"branch":"backend","age":22}
+# employee=dict(name="Ishan",age=22,batchno=2,branch="backend")
+# print(employee)
+
+# print(employee["name"],employee["age"])
+# x=employee.get("batchno")    #get will also return value as per key given
+# print(x)
+
+# key=employee.keys()    #will give you the keys name in the dictionary
+# print(key)
+
+# employee["status"]="Unmarried"  #after updating the keys will also update 
+# print(key)
+
+
+
+# value=employee.values()
+# print(value)
+
+# employee["status"]="Unmarried"   #will return the values of the dictionary in ordered form
+# print(value)
+
+
+# employee["batchno"]=126   #if the values is updated .values() will return the updated values
+# print(value)
+
+
+# item=employee.items()   #it will return key value pair in dictionary as tuples or list
+# print(item)
+
+
+#check if exist
+employee=dict(name="Ishan",age=22,batchno=2,branch="backend")
+print(employee)
+if "age" in employee:
+    print("Yes, age is one of the key ")
+else:
+    print("No the key you are looking for is not present the given dictionary")
+ 
+
+
+
+
 
 
 
