@@ -1,3 +1,6 @@
+#Project 1 : Who wants to became a millionaire ! is done here using function ,for loop,if else statement
+#while in project1 is previously done using if else statement only
+
 import sys
 print("Welcome to  Who Want To Became A Millionaire!")
 cont=input("You wanna continue type y else n ")
