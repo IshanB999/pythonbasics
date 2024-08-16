@@ -658,19 +658,19 @@
 
 
 
-def func():
-    try:
-        l=[1,3,5,7,9,11]
-        i=int(input("Enter the index of value required :"))
-        print(l[i])
-        return l[i]
-    except:
-        print("Some error occured")
-        return 1
-    finally:
-        return 0
-x=func()
-print(x)
+# def func():
+#     try:
+#         l=[1,3,5,7,9,11]
+#         i=int(input("Enter the index of value required :"))
+#         print(l[i])
+#         return l[i]
+#     except:
+#         print("Some error occured")
+#         return 1
+#     finally:
+#         return 0
+# x=func()
+# print(x)
 
 
 
