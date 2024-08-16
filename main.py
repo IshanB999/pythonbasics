@@ -620,12 +620,26 @@
 
 
 #check if exist
-employee=dict(name="Ishan",age=22,batchno=2,branch="backend")
-print(employee)
-if "age" in employee:
-    print("Yes, age is one of the key ")
-else:
-    print("No the key you are looking for is not present the given dictionary")
+# employee=dict(name="Ishan",age=22,batchno=2,branch="backend")
+# print(employee)
+# if "age" in employee:
+#     print("Yes, age is one of the key ")
+# else:
+#     print("No the key you are looking for is not present the given dictionary")
+
+
+
+#Exception handling in python
+
+a=input("Enter a number :")
+
+try :
+    for i in range(0,11):
+     print(f"{int(a)}x{i}={int(a)*i}")
+
+except:
+   print("Invalid syntax")
+
  
 
 
