@@ -676,25 +676,37 @@
 
 
 #short hand if else statement in python
-a=100
-b=100
-print(a,">",b) if a>b else print(a,"=",b) if a==b else print(a,"<",b)
+# a=100
+# b=100
+# print(a,">",b) if a>b else print(a,"=",b) if a==b else print(a,"<",b)
 
-num=11
-number="Even" if ((num %2)==0) else "Odd"
-print(number)
+# num=11
+# number="Even" if ((num %2)==0) else "Odd"
+# print(number)
  
 
 
+#Enumerate function in python
+name=["Ishan","smriti","Pabitra","rakshya","Birendra","swadesh"]
+index=0
+for names in name:
+    print(names)
+    if index==2:
+        print("She/He is a topper ")
+    index+=1
 
+name=["Ishan","smriti","Pabitra","rakshya","Birendra","swadesh"]
+for idx,names in enumerate(name):
+    print(names)
+    if idx==2:
+        print("She/He is a topper ")
 
-
-
-
-
-
-
-
+name=["Ishan","smriti","Pabitra","rakshya","Birendra","swadesh"]
+for idx,names in enumerate(name,start=1):   #we cal also define the startinf position
+    print(names)
+    if idx==2:
+        print("She/He is a topper ")
+    
 
 
 
