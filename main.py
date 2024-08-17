@@ -674,6 +674,15 @@
 
 
 
+
+#short hand if else statement in python
+a=100
+b=100
+print(a,">",b) if a>b else print(a,"=",b) if a==b else print(a,"<",b)
+
+num=11
+number="Even" if ((num %2)==0) else "Odd"
+print(number)
  
 
 
