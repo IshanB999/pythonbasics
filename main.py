@@ -687,26 +687,47 @@
 
 
 #Enumerate function in python
-name=["Ishan","smriti","Pabitra","rakshya","Birendra","swadesh"]
-index=0
-for names in name:
-    print(names)
-    if index==2:
-        print("She/He is a topper ")
-    index+=1
+# name=["Ishan","smriti","Pabitra","rakshya","Birendra","swadesh"]
+# index=0
+# for names in name:
+#     print(names)
+#     if index==2:
+#         print("She/He is a topper ")
+#     index+=1
 
-name=["Ishan","smriti","Pabitra","rakshya","Birendra","swadesh"]
-for idx,names in enumerate(name):
-    print(names)
-    if idx==2:
-        print("She/He is a topper ")
+# name=["Ishan","smriti","Pabitra","rakshya","Birendra","swadesh"]
+# for idx,names in enumerate(name):
+#     print(names)
+#     if idx==2:
+#         print("She/He is a topper ")
 
-name=["Ishan","smriti","Pabitra","rakshya","Birendra","swadesh"]
-for idx,names in enumerate(name,start=1):   #we cal also define the startinf position
-    print(names)
-    if idx==2:
-        print("She/He is a topper ")
-    
+# name=["Ishan","smriti","Pabitra","rakshya","Birendra","swadesh"]
+# for idx,names in enumerate(name,start=1):   #we cal also define the startinf position
+#     print(names)
+#     if idx==2:
+#         print("She/He is a topper ")
+
+
+
+#how import works in python
+# import math 
+# num=int(input("Enter a number "))
+# r=math.sqrt(9)
+# print(r)
+
+# import math as m
+# num=int(input("Enter a number "))
+# print(m.sqrt(num))
+
+# from math import sqrt as s
+# num=int(input("Enter a number "))
+# print(s(num))   
+
+
+#importing for module we made
+# from name import name
+# name()
+
 
 
 
