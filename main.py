@@ -728,8 +728,41 @@
 # from name import name
 # name()
 
-import add
-add.root()
+# import add
+# add.root()
+
+
+#File handling in python 
+
+
+# f = open("demofile.txt","rt")
+# print(f.read(10))
+# print(f.readline()+f.readline())
+# f= open("demofile.txt")
+# for x in f:
+#     print(x)
+# f.close()
+
+
+# f=open("demodile2.txt","x")
+# f.close()
+
+# f=open("demofile2.txt","a")
+# f.write("/n Somethings will be added here later ")
+# f.close()
+
+# f=open("demofile2.txt","w")
+# f.write('''Welcome to the demofile2.txt
+# This file is created for experimenting purpose
+# I hope you find this file useful''')
+# f.close()
+
+# f=open("demofile2.txt","r")
+# print(f.read())
+# f.close()
+
+
+
 
 
 
