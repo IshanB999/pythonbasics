@@ -763,7 +763,30 @@
 
 
 
+#lambda function in python
+
+# add=lambda a,b:a+b
+# print(add(5,3))
 
 
+# avg=lambda a,b,c:(a+b)/c     #lambda can have multiple arguments but have only one expression
+# print(avg(3,2,2))
 
+
+def func(a):
+    return lambda n:n*a
+
+doubler=func(2)
+tripler=func(3)
+
+print(tripler(3))
+print(doubler(5))
+
+#2
+def calc(fx,value):
+    return fx(value)/2
+
+avg=lambda a:a*a
+
+print(calc(avg,4))
 
