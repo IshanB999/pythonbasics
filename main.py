@@ -773,20 +773,69 @@
 # print(avg(3,2,2))
 
 
-def func(a):
-    return lambda n:n*a
+# def func(a):
+#     return lambda n:n*a
 
-doubler=func(2)
-tripler=func(3)
+# doubler=func(2)
+# tripler=func(3)
 
-print(tripler(3))
-print(doubler(5))
+# print(tripler(3))
+# print(doubler(5))
 
-#2
-def calc(fx,value):
-    return fx(value)/2
+# #2
+# def calc(fx,value):
+#     return fx(value)/2
 
-avg=lambda a:a*a
+# avg=lambda a:a*a
 
-print(calc(avg,4))
+# print(calc(avg,4))
+# print(calc(lambda a:a*a,4))
+
+
+
+
+
+#Map function in python
+
+# def func(a,b):
+#     return a+b
+
+# comb=list(map(func,["Ishan","Smriti","pabitra"],["apple","grapes","mango"]))
+# print(comb)
+
+
+
+
+# li=[2,4,6,8,10,12]
+# li1=list(map(lambda a:a/2,li))
+# print(li1)
+
+
+# Filter function in python
+# li=[2,3,4,5,6,7,8,9]
+# newli=list(filter(lambda a:a%2==0,li))
+# print(newli)
+
+
+# def comp(a):
+#     return a>5
+
+# li=[1,3,5,7,9,11]
+# newli1=list(filter(comp,li))
+# print(newli1)
+
+
+
+
+# Reduce function in python
+from functools import reduce
+def calc(a,b):
+    return a+b
+
+li=[1,2,3,4,5,6,7]
+sum=reduce(calc,li)
+print(sum)
+
+
+ 
 
