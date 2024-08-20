@@ -828,14 +828,34 @@
 
 
 # Reduce function in python
-from functools import reduce
-def calc(a,b):
-    return a+b
+# from functools import reduce
+# def calc(a,b):
+#     return a+b
 
-li=[1,2,3,4,5,6,7]
-sum=reduce(calc,li)
-print(sum)
+# li=[1,2,3,4,5,6,7]
+# sum=reduce(calc,li)
+# print(sum)
 
 
- 
+
+
+# "is" vs "==" in python
+
+list1=[1,2,3]
+list2=[1,2,3]
+
+print(list1 is list2)
+print(list1==list2)
+
+
+a=2
+b=2
+print(a ==b)
+print(a is b)
+
+
+a=3
+b="3"
+print(a==b)
+print(a is b)
 
