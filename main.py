@@ -841,21 +841,24 @@
 
 # "is" vs "==" in python
 
-list1=[1,2,3]
-list2=[1,2,3]
+# list1=[1,2,3]
+# list2=[1,2,3]
 
-print(list1 is list2)
-print(list1==list2)
-
-
-a=2
-b=2
-print(a ==b)
-print(a is b)
+# print(list1 is list2)
+# print(list1==list2)
 
 
-a=3
-b="3"
-print(a==b)
-print(a is b)
+# a=2
+# b=2
+# print(a ==b)
+# print(a is b)
+
+
+# a=3
+# b="3"
+# print(a==b)
+# print(a is b)
+
+
+
 
