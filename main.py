@@ -861,4 +861,27 @@
 
 
 
+#classes and objects in python
+
+
+class Student:
+    def __init__(self,name,grade,rollNo,faculty):
+        # print("The constructor is initialized")
+        self.name=name
+        self.grade=grade
+        self.rollNo=rollNo
+        self.faculty=faculty
+
+    def getInfo(self):
+        print(self.name)
+        print(self.grade)
+        print(self.faculty)
+        print(self.rollNo)
+
+        print(f"{self.name} is a student of {self.faculty} whose roll number is {self.rollNo} studying in grade{self.grade}")
+
+
+student1=Student("Ishan bartaula",12,2,"cosmology")
+student1.getInfo()
+
 
