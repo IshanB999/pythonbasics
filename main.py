@@ -864,24 +864,58 @@
 #classes and objects in python
 
 
-class Student:
-    def __init__(self,name,grade,rollNo,faculty):
-        # print("The constructor is initialized")
+# class Student:
+#     def __init__(self,name,grade,rollNo,faculty):
+#         # print("The constructor is initialized")
+#         self.name=name
+#         self.grade=grade
+#         self.rollNo=rollNo
+#         self.faculty=faculty
+
+#     def getInfo(self):
+#         print(self.name)
+#         print(self.grade)
+#         print(self.faculty)
+#         print(self.rollNo)
+
+#         print(f"{self.name} is a student of {self.faculty} whose roll number is {self.rollNo} studying in grade{self.grade}")
+
+#     def greet(self):
+#         print(f"Hello I am {self.name}.Welcome to my program.")
+
+# student1=Student("Ishan bartaula",12,2,"cosmology")
+# student1.greet()
+# student1.getInfo()
+
+
+
+#Inheritance in python 
+
+class Person():
+    def __init__(self,name,age,gender):
         self.name=name
-        self.grade=grade
+        self.age=age
+        self.gender=gender 
+
+    def info(self):
+        print(f"{self.name} is a {self.gender} of age {self.age}")
+
+
+class Student(Person):
+    def __init__(self,name,age,gender,rollNo,faculty):
+        Person.__init__(self,name,age,gender)
         self.rollNo=rollNo
         self.faculty=faculty
 
-    def getInfo(self):
-        print(self.name)
-        print(self.grade)
-        print(self.faculty)
-        print(self.rollNo)
 
-        print(f"{self.name} is a student of {self.faculty} whose roll number is {self.rollNo} studying in grade{self.grade}")
+    def getinfo(self):
+            print(f"The student {self.name} is of faculty {self.faculty} whose roll no is {self.rollNo}")
 
 
-student1=Student("Ishan bartaula",12,2,"cosmology")
-student1.getInfo()
+p1=Person("Ishan bartaula",22,"male")
+p1.info()
+
+st1=Student("Ishan bartaula",22,"male",2,"cosmology")
+st1.getinfo()
 
 
