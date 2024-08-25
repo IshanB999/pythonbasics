@@ -891,31 +891,53 @@
 
 #Inheritance in python 
 
+# class Person():
+#     def __init__(self,name,age,gender):
+#         self.name=name
+#         self.age=age
+#         self.gender=gender 
+
+#     def info(self):
+#         print(f"{self.name} is a {self.gender} of age {self.age}")
+
+
+# class Student(Person):
+#     def __init__(self,name,age,gender,rollNo,faculty):
+#         Person.__init__(self,name,age,gender)
+#         self.rollNo=rollNo
+#         self.faculty=faculty
+
+
+#     def getinfo(self):
+#             print(f"The student {self.name} is of faculty {self.faculty} whose roll no is {self.rollNo}")
+
+
+# p1=Person("Ishan bartaula",22,"male")
+# p1.info()
+
+# st1=Student("Ishan bartaula",22,"male",2,"cosmology")
+# st1.getinfo()
+
+
+
+#concept of private and protected in python
 class Person():
-    def __init__(self,name,age,gender):
-        self.name=name
-        self.age=age
-        self.gender=gender 
+    def __init__(self,name):
+        self.__name=name
 
     def info(self):
-        print(f"{self.name} is a {self.gender} of age {self.age}")
-
+        print(f"Name is :{self._Person__name}")
 
 class Student(Person):
-    def __init__(self,name,age,gender,rollNo,faculty):
-        Person.__init__(self,name,age,gender)
-        self.rollNo=rollNo
-        self.faculty=faculty
+    pass
 
 
-    def getinfo(self):
-            print(f"The student {self.name} is of faculty {self.faculty} whose roll no is {self.rollNo}")
+person1=Person("ishan")
+print(person1._Person__name)  #needs to be accessed indirectly through the class name 
+print(person1.info())
 
 
-p1=Person("Ishan bartaula",22,"male")
-p1.info()
-
-st1=Student("Ishan bartaula",22,"male",2,"cosmology")
-st1.getinfo()
+st1=Student("Bartaula")
+print(st1._Person__name)
 
 
