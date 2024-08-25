@@ -1019,36 +1019,59 @@
 
 
 
-class Car():
-    car_model="S class"      #its a class variable which is applies for all the object created unless 
-                             #it is modifies creating a instance variable
+# class Car():
+#     car_model="S class"      #its a class variable which is applies for all the object created unless 
+#                              #it is modifies creating a instance variable
 
-    def __init__(self,name,color):
+#     def __init__(self,name,color):
      
+#         self.name=name
+#         self.color=color
+
+#     def showDetails(self):
+#         print(f"The car {self.name} is of color {self.color} and its model is {self.car_model}")
+
+
+
+# caar1=Car("BMW","mattblack")
+# caar2=Car("Aston Martin","Light green")
+
+# Car.car_model="Sport "   #if you change the class variable , it will be changed for all the object
+
+# caar1.car_model="s class"  #can be changed for particular object creating an instance variable
+# caar1.showDetails()
+# caar2.showDetails()
+
+
+
+
+#class methods in python
+
+class Student():
+    faculty="cosmolgy"
+
+    def __init__(self,name,age,gender):
         self.name=name
-        self.color=color
+        self.age=age
+        self.gender=gender
+    
+    #if we do not use the class method changeFaculty method when called will change the faculty as instance
+    #not gclass variable
+    #by using class method  we can get access of class variable inside methods and change change it 
 
-    def showDetails(self):
-        print(f"The car {self.name} is of color {self.color} and its model is {self.car_model}")
+    @classmethod    
+    def changeFaculty(cls, newFaculty):
+        cls.faculty=newFaculty
 
+    def details(self):
+        print(f"{self.name} is a student of {self.faculty} and of age {self.age}")
 
-
-caar1=Car("BMW","mattblack")
-caar2=Car("Aston Martin","Light green")
-
-Car.car_model="Sport "   #if you change the class variable , it will be changed for all the object
-
-caar1.car_model="s class"  #can be changed for particular object creating an instance variable
-caar1.showDetails()
-caar2.showDetails()
-
-
-
+stu1=Student("Ishan",22,"male")
+stu1.details()
 
 
+stu1.changeFaculty("Physics")
+stu1.details()
 
-
-
-
-
+print(Student.faculty)
 
