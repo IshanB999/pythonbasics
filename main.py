@@ -945,26 +945,56 @@
 
 #Static methods in python
 
-class Math():
-    def __init__(self,n):
-        self.num=n
+# class Math():
+#     def __init__(self,n):
+#         self.num=n
 
-    def sum(self,n):
-        add=self.num+n
-        return add
+#     def sum(self,n):
+#         add=self.num+n
+#         return add
 
-    @staticmethod      #static method use garera self arg pass nagari kana either obj.method or class_name.method
-                       #use garera sajilai class vanda bahira access garna sakinxa 
-    def isEven(n):
-        if n%2==0:
-            return f"{n} is even "
-
-
-number1= Math(12)
-print(number1.sum(9))
+#     @staticmethod      #static method use garera self arg pass nagari kana either obj.method or class_name.method
+#                        #use garera sajilai class vanda bahira access garna sakinxa 
+#     def isEven(n):
+#         if n%2==0:
+#             return f"{n} is even "
 
 
-print( Math.isEven(12))
-print( number1.isEven(11))
+# number1= Math(12)
+# print(number1.sum(9))
+
+
+# print( Math.isEven(12))
+# print( number1.isEven(11))
+
+
+
+class Person():
+    from datetime import date
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+
+    
+    def fromBirthyear(self,name,year):
+        return (self.name, self.date.today().year-year)
+    
+    @staticmethod
+    def isAdult(n):
+        return n>18
+    
+person1=Person("Ishan",22)
+print(person1.age)
+
+person2=person1.fromBirthyear("Ishan",2003)
+print(person2)
+
+print(person1.isAdult(22))
+
+
+
+
+
+
 
 
