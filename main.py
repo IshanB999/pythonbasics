@@ -921,23 +921,50 @@
 
 
 #concept of private and protected in python
-class Person():
-    def __init__(self,name):
-        self.__name=name
+# class Person():
+#     def __init__(self,name):
+#         self.__name=name
 
-    def info(self):
-        print(f"Name is :{self._Person__name}")
+#     def info(self):
+#         print(f"Name is :{self._Person__name}")
 
-class Student(Person):
-    pass
-
-
-person1=Person("ishan")
-print(person1._Person__name)  #needs to be accessed indirectly through the class name 
-print(person1.info())
+# class Student(Person):
+#     pass
 
 
-st1=Student("Bartaula")
-print(st1._Person__name)
+# person1=Person("ishan")
+# print(person1._Person__name)  #needs to be accessed indirectly through the class name
+# print(person1.info())
+
+
+# st1=Student("Bartaula")
+# print(st1._Person__name)
+
+
+
+
+#Static methods in python
+
+class Math():
+    def __init__(self,n):
+        self.num=n
+
+    def sum(self,n):
+        add=self.num+n
+        return add
+
+    @staticmethod      #static method use garera self arg pass nagari kana either obj.method or class_name.method
+                       #use garera sajilai class vanda bahira access garna sakinxa 
+    def isEven(n):
+        if n%2==0:
+            return f"{n} is even "
+
+
+number1= Math(12)
+print(number1.sum(9))
+
+
+print( Math.isEven(12))
+print( number1.isEven(11))
 
 
