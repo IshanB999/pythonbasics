@@ -969,27 +969,81 @@
 
 
 
-class Person():
-    from datetime import date
-    def __init__(self,name,age):
+# class Person():
+#     from datetime import date
+#     def __init__(self,name,age):
+#         self.name=name
+#         self.age=age
+
+    
+#     def fromBirthyear(self,name,year):
+#         self.name=name
+#         return (self.name, self.date.today().year-year)
+    
+#     @staticmethod
+#     def isAdult(n):
+#         return n>18
+    
+# person1=Person("Ishan",22)
+# print(person1.name,person1.age)
+
+# person2=person1.fromBirthyear("Ish",2003)
+# print(person2)
+
+# print(person1.isAdult(22))
+
+
+
+
+#Class variable vs Instance variable
+
+# class Car():
+#     def __init__(self,name,color):
+#         #Instance varibale ;for each object created each of them will have their own varibale as a instance 
+#         self.name=name
+#         self.color=color
+
+#     def showDetails(self):
+#         print(f"The car {self.name} is of color {self.color}")
+
+
+#for caar1 its instance varibale is BMW and mattblack which doesnt affect the variable of caar2
+#it is for caar1 only 
+# caar1=Car("BMW","mattblack")
+
+# #Each object created will have its own instance varibale which deosnot affect the class variable 
+# caar2=Car("Aston Martin","Light green")
+# caar1.showDetails()
+# caar2.showDetails()
+
+
+
+
+class Car():
+    car_model="S class"      #its a class variable which is applies for all the object created unless 
+                             #it is modifies creating a instance variable
+
+    def __init__(self,name,color):
+     
         self.name=name
-        self.age=age
+        self.color=color
 
-    
-    def fromBirthyear(self,name,year):
-        return (self.name, self.date.today().year-year)
-    
-    @staticmethod
-    def isAdult(n):
-        return n>18
-    
-person1=Person("Ishan",22)
-print(person1.age)
+    def showDetails(self):
+        print(f"The car {self.name} is of color {self.color} and its model is {self.car_model}")
 
-person2=person1.fromBirthyear("Ishan",2003)
-print(person2)
 
-print(person1.isAdult(22))
+
+caar1=Car("BMW","mattblack")
+caar2=Car("Aston Martin","Light green")
+
+Car.car_model="Sport "   #if you change the class variable , it will be changed for all the object
+
+caar1.car_model="s class"  #can be changed for particular object creating an instance variable
+caar1.showDetails()
+caar2.showDetails()
+
+
+
 
 
 
