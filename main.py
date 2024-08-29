@@ -1045,33 +1045,68 @@
 
 
 
-#class methods in python
+# #class methods in python
 
-class Student():
-    faculty="cosmolgy"
+# class Student():
+#     faculty="cosmolgy"
 
-    def __init__(self,name,age,gender):
-        self.name=name
-        self.age=age
-        self.gender=gender
+#     def __init__(self,name,age,gender):
+#         self.name=name
+#         self.age=age
+#         self.gender=gender
     
     #if we do not use the class method changeFaculty method when called will change the faculty as instance
     #not gclass variable
     #by using class method  we can get access of class variable inside methods and change change it 
 
-    @classmethod    
-    def changeFaculty(cls, newFaculty):
-        cls.faculty=newFaculty
+#     @classmethod    
+#     def changeFaculty(cls, newFaculty):
+#         cls.faculty=newFaculty
 
-    def details(self):
-        print(f"{self.name} is a student of {self.faculty} and of age {self.age}")
+#     def details(self):
+#         print(f"{self.name} is a student of {self.faculty} and of age {self.age}")
 
-stu1=Student("Ishan",22,"male")
-stu1.details()
+# stu1=Student("Ishan",22,"male")
+# stu1.details()
 
 
-stu1.changeFaculty("Physics")
-stu1.details()
+# stu1.changeFaculty("Physics")
+# stu1.details()
 
-print(Student.faculty)
+# print(Student.faculty)
+
+
+
+
+
+#class method as alternative constructor
+class Student:
+    def __init__(self,name,age,faculty):
+        self.name=name
+        self.age=age
+        self.faculty=faculty
+
+
+
+    @classmethod
+    def from_string(cls,string):
+        name,age,faculty=string.split("_")
+        return cls(name,int(age),faculty)
+    
+    # @classmethod
+    # def from_dic(cls,date_dic):
+    #     return cls(date_dic["year"],date_dic["month"],date_dic["day"])
+    
+    def display(self):
+        print(f"name:{self.name}    age:{self.age}         faculty:{self.faculty}")
+
+
+
+
+
+string="Ishan_02_Cosmology"
+stu1=Student.from_string(string)
+stu1.display()
+
+
 
