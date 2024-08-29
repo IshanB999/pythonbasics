@@ -1079,34 +1079,82 @@
 
 
 
-#class method as alternative constructor
-class Student:
-    def __init__(self,name,age,faculty):
+# #class method as alternative constructor
+# class Student:
+#     def __init__(self,name,age,faculty):
+#         self.name=name
+#         self.age=age
+#         self.faculty=faculty
+
+
+
+#     @classmethod
+#     def from_string(cls,string):
+#         name,age,faculty=string.split("_")
+#         return cls(name,int(age),faculty)
+    
+#     # @classmethod
+#     # def from_dic(cls,date_dic):
+#     #     return cls(date_dic["year"],date_dic["month"],date_dic["day"])
+    
+#     def display(self):
+#         print(f"name:{self.name}    age:{self.age}         faculty:{self.faculty}")
+
+
+
+
+
+# string="Ishan_02_Cosmology"
+# stu1=Student.from_string(string)
+# stu1.display()
+
+
+#Super() keyword in python
+
+class Animal:
+    def __init__(self,name):
         self.name=name
-        self.age=age
-        self.faculty=faculty
+
+    def sound(self):
+        return f"This animal has a sound"
 
 
-
-    @classmethod
-    def from_string(cls,string):
-        name,age,faculty=string.split("_")
-        return cls(name,int(age),faculty)
-    
-    # @classmethod
-    # def from_dic(cls,date_dic):
-    #     return cls(date_dic["year"],date_dic["month"],date_dic["day"])
-    
-    def display(self):
-        print(f"name:{self.name}    age:{self.age}         faculty:{self.faculty}")
+class Bird(Animal):
+    def __init__(self,name,breed):
+       super().__init__(name)
+       self.breed=breed
 
 
+    def sound(self):
+       
+        return f"{super().sound()} {self.name} chirps"
 
 
+humming=Bird("Ham",'Costa')
+print(humming.sound())
+print(humming.name)
+print(humming.breed)
+        
 
-string="Ishan_02_Cosmology"
-stu1=Student.from_string(string)
-stu1.display()
 
+class Animal:
+    def __init__(self, name):
+        self.name = name
 
+    def speak(self):
+        return f"{self.name} makes a sound."
 
+class Dog(Animal):
+    def __init__(self, name, breed):
+        # Call the parent class's __init__ method
+        super().__init__(name)
+        self.breed = breed
+
+    def speak(self):
+        # Call the parent class's speak method
+        parent_speak = super().speak()
+        return f"{parent_speak} {self.name} barks!"
+
+# Create an instance of Dog
+dog = Dog("Buddy", "Golden Retriever")
+print(dog.speak())  # Output: Buddy makes a sound. Buddy barks!
