@@ -1111,50 +1111,75 @@
 
 #Super() keyword in python
 
-class Animal:
-    def __init__(self,name):
-        self.name=name
+# class Animal:
+#     def __init__(self,name):
+#         self.name=name
 
-    def sound(self):
-        return f"This animal has a sound"
-
-
-class Bird(Animal):
-    def __init__(self,name,breed):
-       super().__init__(name)
-       self.breed=breed
+#     def sound(self):
+#         return f"This animal has a sound"
 
 
-    def sound(self):
+# class Bird(Animal):
+#     def __init__(self,name,breed):
+#        super().__init__(name)
+#        self.breed=breed
+
+
+#     def sound(self):
        
-        return f"{super().sound()} {self.name} chirps"
+#         return f"{super().sound()} {self.name} chirps"
 
 
-humming=Bird("Ham",'Costa')
-print(humming.sound())
-print(humming.name)
-print(humming.breed)
+# humming=Bird("Ham",'Costa')
+# print(humming.sound())
+# print(humming.name)
+# print(humming.breed)
         
 
 
-class Animal:
-    def __init__(self, name):
-        self.name = name
+# class Animal:
+#     def __init__(self, name):
+#         self.name = name
 
-    def speak(self):
-        return f"{self.name} makes a sound."
+#     def speak(self):
+#         return f"{self.name} makes a sound."
 
-class Dog(Animal):
-    def __init__(self, name, breed):
-        # Call the parent class's __init__ method
-        super().__init__(name)
-        self.breed = breed
+# class Dog(Animal):
+#     def __init__(self, name, breed):
+#         # Call the parent class's __init__ method
+#         super().__init__(name)
+#         self.breed = breed
 
-    def speak(self):
-        # Call the parent class's speak method
-        parent_speak = super().speak()
-        return f"{parent_speak} {self.name} barks!"
+#     def speak(self):
+#         # Call the parent class's speak method
+#         parent_speak = super().speak()
+#         return f"{parent_speak} {self.name} barks!"
 
-# Create an instance of Dog
-dog = Dog("Buddy", "Golden Retriever")
-print(dog.speak())  # Output: Buddy makes a sound. Buddy barks!
+# # Create an instance of Dog
+# dog = Dog("Buddy", "Golden Retriever")
+# print(dog.speak())  # Output: Buddy makes a sound. Buddy barks!
+
+
+
+
+#method overriding in python 
+
+class Shape():
+    def __init__(self,x,y):
+        self.x=x
+        self.y=y
+
+    def area(self):
+        return self.x *self.y
+    
+class Circle(Shape):
+    # from math import pi
+    def area(self):
+        return 3.14*super().area()    #here we override the area method in parent class by using super()
+
+rectangle=Shape(2,4)
+print(rectangle.area())
+circle=Circle(5,5)
+print(circle.area() )
+    
+
