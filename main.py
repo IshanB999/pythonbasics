@@ -1267,24 +1267,49 @@
 # print(com1+com2)
 
 
-#single inheritance in python 
-class Animal:
-    def __init__(self,name):
-        self.name=name
+# #single inheritance in python 
+# class Animal:
+#     def __init__(self,name):
+#         self.name=name
 
-    def sound(self):
-        return f"{self.name} makes a sound"
+#     def sound(self):
+#         return f"{self.name} makes a sound"
     
-class Cat(Animal):
-    def __init__(self,name,type):
-        Animal.__init__(self,name)
-        self.type=type
+# class Cat(Animal):
+#     def __init__(self,name,type):
+#         Animal.__init__(self,name)
+#         self.type=type
 
-    def sound(self):
-        return f"{self.name} is a {self.type} and do meow"
+#     def sound(self):
+#         return f"{self.name} is a {self.type} and do meow"
     
 
-c1=Cat('Suu',"cat")
-print(c1.name)
-print(c1.type)
-print(c1.sound())
+# c1=Cat('Suu',"cat")
+# print(c1.name)
+# print(c1.type)
+# print(c1.sound())
+
+
+
+#multiple inheritance in python
+# Python Program to depict multiple inheritance
+# when method is overridden in both classes
+
+class Class1:
+	def m(self):
+		print("In Class1") 
+	
+class Class2(Class1):
+	def m(self):
+		print("In Class2")
+
+class Class3(Class1):
+	def m(self):
+		print("In Class3") 
+		
+class Class4(Class2, Class3):
+	pass
+	
+obj = Class4()
+obj.m()
+
