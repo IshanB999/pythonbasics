@@ -1251,5 +1251,21 @@
 
 
 
+
+#operator overloading in python
+
+class Complex:
+    def __init__(self,r,i):
+        self.real=r
+        self.imaginary=i
+
+    def __add__(self,x):
+        return f'{self.real+x.real}+{self.imaginary+x.imaginary}i'
+
+com1=Complex(2,4)
+com2=Complex(3,5)
+print(com1+com2)
+
+
 #single inheritance in python 
 
