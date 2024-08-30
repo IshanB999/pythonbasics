@@ -1254,18 +1254,37 @@
 
 #operator overloading in python
 
-class Complex:
-    def __init__(self,r,i):
-        self.real=r
-        self.imaginary=i
+# class Complex:
+#     def __init__(self,r,i):
+#         self.real=r
+#         self.imaginary=i
 
-    def __add__(self,x):
-        return f'{self.real+x.real}+{self.imaginary+x.imaginary}i'
+#     def __add__(self,x):
+#         return f'{self.real+x.real}+{self.imaginary+x.imaginary}i'
 
-com1=Complex(2,4)
-com2=Complex(3,5)
-print(com1+com2)
+# com1=Complex(2,4)
+# com2=Complex(3,5)
+# print(com1+com2)
 
 
 #single inheritance in python 
+class Animal:
+    def __init__(self,name):
+        self.name=name
 
+    def sound(self):
+        return f"{self.name} makes a sound"
+    
+class Cat(Animal):
+    def __init__(self,name,type):
+        Animal.__init__(self,name)
+        self.type=type
+
+    def sound(self):
+        return f"{self.name} is a {self.type} and do meow"
+    
+
+c1=Cat('Suu',"cat")
+print(c1.name)
+print(c1.type)
+print(c1.sound())
