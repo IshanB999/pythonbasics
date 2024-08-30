@@ -1164,22 +1164,51 @@
 
 #method overriding in python 
 
-class Shape():
-    def __init__(self,x,y):
-        self.x=x
-        self.y=y
+# class Shape():
+#     def __init__(self,x,y):
+#         self.x=x
+#         self.y=y
 
-    def area(self):
-        return self.x *self.y
+#     def area(self):
+#         return self.x *self.y
     
-class Circle(Shape):
-    # from math import pi
-    def area(self):
-        return 3.14*super().area()    #here we override the area method in parent class by using super()
+# class Circle(Shape):
+#     # from math import pi
+#     def area(self):
+#         return 3.14*super().area()    #here we override the area method in parent class by using super()
 
-rectangle=Shape(2,4)
-print(rectangle.area())
-circle=Circle(5,5)
-print(circle.area() )
+# rectangle=Shape(2,4)
+# print(rectangle.area())
+# circle=Circle(5,5)
+# print(circle.area() )
     
 
+
+
+
+#operator overloading in python 
+
+
+class Vector:
+    def __init__(self,i,j,k):
+        self.i=i
+        self.j=j
+        self.k=k
+
+    def __str__(self):       
+        return f"{self.i}i+{self.j}j+{self.k}k"
+    
+    def __add__(self,x):
+        return Vector(self.i+x.i,self.j+x.j,self.k+x.k)
+
+
+
+vector1=Vector(2,3,4)
+print(vector1)
+
+
+vector2=Vector(3,6,8)
+print(vector2)
+
+
+print(vector1+vector2)
