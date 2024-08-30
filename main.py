@@ -1189,26 +1189,66 @@
 #operator overloading in python 
 
 
-class Vector:
-    def __init__(self,i,j,k):
-        self.i=i
-        self.j=j
-        self.k=k
+# class Vector:
+#     def __init__(self,i,j,k):
+#         self.i=i
+#         self.j=j
+#         self.k=k
 
-    def __str__(self):       
-        return f"{self.i}i+{self.j}j+{self.k}k"
+#     def __str__(self):       
+#         return f"{self.i}i+{self.j}j+{self.k}k"
     
-    def __add__(self,x):
-        return Vector(self.i+x.i,self.j+x.j,self.k+x.k)
+#     def __add__(self,x):
+#         return Vector(self.i+x.i,self.j+x.j,self.k+x.k)
 
 
 
-vector1=Vector(2,3,4)
-print(vector1)
+# vector1=Vector(2,3,4)
+# print(vector1)
 
 
-vector2=Vector(3,6,8)
-print(vector2)
+# vector2=Vector(3,6,8)
+# print(vector2)
 
 
-print(vector1+vector2)
+# print(vector1+vector2)
+
+
+
+
+#dunder or magic methods in python 
+class Student:
+    def __init__(self,name,age,faculty, mark):
+        self.name=name
+        self.age=age
+        self.faculty=faculty
+        self.mark=mark
+
+    def __len__(self):
+        i=0
+        for l in self.name:
+            i=i+1
+        return i 
+    
+
+    def __str__(self):
+        return f"student name is {self.name}"
+    
+    def __call__(self):
+        print("It is a Student object and the student details are: ")
+        print(f"Name :{self.name}")
+        print(f"Age :{self.age}")
+        print(f"Faculty :{self.faculty}")
+        print(f"Mark :{self.mark}")
+
+
+st1=Student("Ishan",22,"cosmology",98)
+# print(st1.name)
+# print(len(st1))
+# print(str(st1))
+st1()
+
+
+
+#single inheritance in python 
+
