@@ -1217,36 +1217,37 @@
 
 
 #dunder or magic methods in python 
-class Student:
-    def __init__(self,name,age,faculty, mark):
-        self.name=name
-        self.age=age
-        self.faculty=faculty
-        self.mark=mark
+# class Student:
+#     def __init__(self,name,age,faculty, mark):
+#         self.name=name
+#         self.age=age
+#         self.faculty=faculty
+#         self.mark=mark
 
-    def __len__(self):
-        i=0
-        for l in self.name:
-            i=i+1
-        return i 
+#     def __len__(self):
+#         return len(self.name)
+        # i=0
+        # for l in self.name:
+        #     i=i+1
+        # return i 
     
 
-    def __str__(self):
-        return f"student name is {self.name}"
+#     def __str__(self):
+#         return f"student name is {self.name}"
     
-    def __call__(self):
-        print("It is a Student object and the student details are: ")
-        print(f"Name :{self.name}")
-        print(f"Age :{self.age}")
-        print(f"Faculty :{self.faculty}")
-        print(f"Mark :{self.mark}")
+#     def __call__(self):
+#         print("It is a Student object and the student details are: ")
+#         print(f"Name :{self.name}")
+#         print(f"Age :{self.age}")
+#         print(f"Faculty :{self.faculty}")
+#         print(f"Mark :{self.mark}")
 
 
-st1=Student("Ishan",22,"cosmology",98)
-# print(st1.name)
-# print(len(st1))
-# print(str(st1))
-st1()
+# st1=Student("Ishan",22,"cosmology",98)
+# # print(st1.name)
+# print(f"The length of name is:", len(st1))
+# # print(str(st1))
+# st1()
 
 
 
