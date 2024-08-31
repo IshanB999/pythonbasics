@@ -1295,21 +1295,90 @@
 # Python Program to depict multiple inheritance
 # when method is overridden in both classes
 
-class Class1:
-	def m(self):
-		print("In Class1") 
+# class Class1:
+# 	def m(self):
+# 		print("In Class1") 
 	
-class Class2(Class1):
-	def m(self):
-		print("In Class2")
+# class Class2(Class1):
+# 	def m(self):
+# 		print("In Class2")
 
-class Class3(Class1):
-	def m(self):
-		print("In Class3") 
+# class Class3(Class1):
+# 	def m(self):
+# 		print("In Class3") 
 		
-class Class4(Class2, Class3):
-	pass
+# class Class4(Class2, Class3):
+# 	pass
 	
-obj = Class4()
-obj.m()
+# obj = Class4()
+# obj.m()
+
+
+
+#multilevel inheritance in python programming
+
+# class Animal:
+#     def __init__(self,species):
+#         self.species=species
+#         print(f"Animal is of species {self.species}")
+
+#     def sound(self):
+#         return f"{self.species} makes sound"
+    
+# class Carni(Animal):
+#     def __init__(self,species,type):
+#         Animal.__init__(self,species)     #carni class inherits properties from Animal class and Tiger class
+#         self.type=type                     #inherits properties from Carni class and Tier class inherits indirectly
+#                                         #inherits from Animal class too
+#         print(f"{self.type} is a {self.species} species")
+
+#     def sound(self):
+#         return f"{self.type} roars"
+    
+# class Tiger:
+#     def __init__(self,species,type,breed):
+#         Carni.__init__(self,species,type)      #Tiger class inherits properties from Carni class
+#         self.breed=breed
+#         print(f"{self.type} is a {self.species} species and its breed is {self.breed}")
+
+# t=Tiger("Carnivorous","Tiger","Bengal tiger")
+
+
+
+
+
+#Time module in python
+
+import time
+
+# def while_loop():
+#     i=0
+#     while i <10000:
+#         i+=1
+#         print(i)
+        
+
+
+# def for_loop():
+    
+#     for i in range(10000):
+#         print(i)
+#         i+=1
+          
+# t=time.time()
+# while_loop()
+# t1=time.time()-t
+# t=time.time()
+# for_loop()
+# t2=print(time.time()-t)
+# print(t1)
+  
+
+# time.sleep(5)
+# print("This is printed after 5 seconds")
+
+
+t=time.localtime()
+formatted_time=time.strftime("%Y-%m-%d %H:%M:%S",t)
+print(formatted_time)
 
