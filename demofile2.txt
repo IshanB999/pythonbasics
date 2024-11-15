@@ -1,3 +1,0 @@
-Welcome to the demofile2.txt
-This file is created for experimenting purpose
-I hope you find this file useful
